@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Inputs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <form class="form">
+    <label for="text">nombre:</label>
+    <input id="text" name="name1" type="text">
+    <input type="button" onclick="readInput(this.form)" value="submit">
+  </form>
+
+  <form action="">
+    <input type="radio" name="gender" value="male"> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other
+    <input type="button" onclick="readInput2(this.form)" value="submit">
+  </form>
+
+  <form action="">
+    <input type="checkbox" name="vehicle1" value="Bike" checked> I have a bike<br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car
+    <input type="button" onclick="readInput3(this.form)" value="submit">
+  </form>
+
+  <form>
+    Birthday:
+    <input type="date" name="bday">
+    <input type="button" onclick="readInput4(this.form)" value="submit">
+  </form>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

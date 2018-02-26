@@ -1,0 +1,26 @@
+body {
+  font-size: 16px;
+}
+h1 {
+  color: blue;
+  font-size: 1.5em;
+}
+li {
+  color: #0ff493;
+  font-size: 20px;
+  font-family: fantasy;
+  text-shadow: 2px 2px #ff0000;
+}
+img {
+  width:200px;
+}
+.carb {
+  color: black;
+}
+#fruta {
+  font-size: 60px;
+}
+#fruta:hover {
+  text-shadow: 5px 5px pink;
+  cursor: pointer;
+}

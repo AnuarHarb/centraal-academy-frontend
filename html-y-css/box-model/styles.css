@@ -1,0 +1,62 @@
+* { /* Este selecto se refiere a todos los elementos de nuestra página, se suele agregar para contrarrestar los estilos propios de cada navegador.*/
+  margin: 0;
+  padding:0;
+}
+header {
+  border-bottom: 1px solid black; /* El borde toma 3 parámetros: Ancho de linea de borde, 2.- tipo de linea de borde, 3.- color de borde */
+}
+.header-div {
+  display: inline-block;
+}
+.header-div img { /* Aquí estamos seleccionando todos las imagenes que estén dentro de alguna etiqueta con la clase "header-div" */
+  width: 100px;
+  vertical-align: middle;
+}
+.header-div a {
+  color: black;
+  font-size: 25px;
+  text-decoration: none;
+  margin: 0 50px; /* Al agrregar 2 números al margen el primero se refiere a "arriba y abajo" y el segundo a "derecha e izquierda" */
+}
+.header-div a:hover { /* Esta es una pseudo-clase, nos ayudan para seleccionar momentos o caracterísitcas específicas de nuestros selectores, ejemplo: hover se refiere a la acción de poner el mouse sobre el elemento */
+  text-shadow: 1px 1px lightgray;
+}
+section {
+  text-align: center; /* Esta propiedad centra cualquier elemento con: "display: inline" p "display: inline-block" que este dentro de este contenedor. */
+}
+article {
+  box-shadow: 1px 1px 1px gray;
+  display: inline-block; /* La propiedad display va a controlar la manera en que mis etiquetas se comportan en el modelo de caja */
+  margin: 0 15px;
+  height: 400px;
+  vertical-align: top;
+  width: 30%;
+}
+article img {
+  width:100%;
+}
+article .article-picture {
+  height: 225px;
+  overflow: hidden;
+}
+footer {
+  background-color: grey;
+  padding: 50px;
+  margin-top: 30px;
+}
+footer p {
+  color: white;
+  font-size: 25px;
+}
+footer .picture {
+  width: 80px;
+}
+footer .picture img {
+  width: 100%;
+}
+footer .footer-div {
+  display: inline-block; /* El valor inline-block hace que tu contenedor pueda acomodarse junto a otros contenedores pero que al mismo tiempo se le pueda definir un tamaño específico (width y height), margin y padding. */
+}
+footer .contact-info {
+  width: 80%;
+}

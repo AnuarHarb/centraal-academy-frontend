@@ -1,0 +1,58 @@
+<!Doctype html> <!-- Versión de html que estamos usando (HTML5) -->
+<html lang="es">
+  <head> <!-- Información para el navegador -->
+    <title>Box model</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Referencia a nuestro archivo de estilos -->
+  </head>
+
+  <body> <!-- Contenido de la página -->
+    <header> <!-- Etiqueta contenedora que encapsula el encabezado de nuestra página -->
+      <div class="header-div">
+        <img src="img/perrito.jpg" alt="Perrito viejito">
+      </div>
+      <div class="header-div"> <!-- class: Selector para agrupar varias etiquetas -->
+        <a href="https://www.sams.com.mx/mascotas/perros/alimento-para-perros">Croquetas</a>
+        <a href="https://www.timeoutmexico.mx/ciudad-de-mexico/mascotas/parques-para-perros">Parques</a>
+      </div>
+    </header>
+
+    <section> <!-- Etiqueta contenedora que encapsula nuestro contenido principal -->
+      <article>
+        <div class="article-picture">
+          <img src="img/peque.jpg" alt="Perrito con sueter"> <!-- src: atributo que hace referencia al archivo de una imagen -->
+        </div>
+        <h2>Perros pequeños</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem corporis temporibus, provident vero consequatur! Non impedit consequatur</p>
+      </article>
+
+      <article> <!-- Etiqueta contenedora que encapsula una parte específica de nuestro contenido -->
+        <div class="article-picture">
+          <img src="img/mediano.jpg" alt="Perro mediano alerta">
+        </div>
+        <h2>Perros Medianos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eius magni repellat dolor distinctio unde cupiditate nisi ullam sequi, consequuntur tempora repudiandae doloribus ducimus magnam blanditiis eos quod similique mollitia.</p>
+      </article>
+
+      <article>
+        <div class="article-picture">
+          <img src="img/grande.jpg" alt="Perro enorme">
+        </div>
+        <h2>Perros Grandes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia itaque qui doloribus natus possimus odio quidem deserunt sed architecto error. Aut blanditiis velit delectus, laborum consequuntur pariatur consequatur dolor explicabo!</p>
+      </article>
+    </section>
+
+    <footer> <!-- Etiqueta contenedora que encapsula el pie de página de nuestro proyecto -->
+      <div class="footer-div contact-info"> <!-- Se pueden usar muchas clases en una misma etiqueta separandolas con espacios -->
+        <p>tel: 5534-0293</p>
+        <p>mail: perritos@multitalla.com</p>
+      </div>
+      <div class="footer-div">
+        <div class="picture">
+          <img src="img/facebook.png" alt="Logo de facebook">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
