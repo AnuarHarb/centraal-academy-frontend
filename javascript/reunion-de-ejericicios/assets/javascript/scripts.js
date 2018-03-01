@@ -21,7 +21,6 @@ function cambiarPassword() {
 }
 
 document.querySelector('.palindrome').addEventListener('click', startPalindrome);
-document.querySelector('.pyramid').addEventListener('click', pyramid);
 
 function startPalindrome() {
   var word = prompt('¿Ingresa una palabra para ver si es un Palindromo');
@@ -65,8 +64,9 @@ function startPalindromTree() {
   }
 }
 
-function pyramid() {
-  var floors = parseInt(prompt('¿De cuantos pisos será tu pirámide?'));
+function pyramid(form) {
+  var floors = form.floorsInput.value
+  var legend = form.pyramidLegend.value
   var space = '';
   var bricks = '';
   for(var i = 0; i < floors; i++) {
@@ -78,6 +78,7 @@ function pyramid() {
     div.appendChild(pre);
     pre.innerHTML = space + bricks + bricks;
   }
+  console.log(legend);
 }
 
 function levelTitle() {

@@ -1,0 +1,32 @@
+.google-image {
+  width: 200px;
+}
+header {
+  text-align: right;
+}
+header div {
+  display: inline-block;
+}
+section {
+  text-align: center;
+}
+.input-box {
+  border: .5px solid lightgray;
+  box-shadow: 5px 5px 10px gray;
+  margin: 0 auto;
+  padding: 15px;
+  width: 250px;
+}
+input[type="text"] {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  width: 200px;
+}
+input[type="text"]:focus {
+  outline: 0; /* none; */
+}
+input[type="button"] {
+  display: block;
+  margin: 20px auto;
+}

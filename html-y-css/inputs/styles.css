@@ -10,3 +10,81 @@ input[type="button"] {
   display: block;
   margin: 10px auto;
 }
+
+.image-uploader {
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  height: 200px;
+  width: 300px;
+}
+
+.image-uploader.highlight {
+  border-color: red;
+}
+
+.image-uploader label {
+  box-sizing: border-box;
+  height: 100%;
+  left: 0;
+  padding-top: 50px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.image-uploader label:hover{
+  cursor: pointer;
+}
+
+.image-uploader label h4 {
+  font-family: arial;
+  margin: 0;
+}
+
+.image-uploader input[type="button"] {
+  background-color: #253D42;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.image-uploader input[type="button"]:hover {
+  cursor: pointer;
+}
+
+.image-uploader input[type="button"]:focus {
+  outline: none;
+}
+
+.image-uploader progress {
+  display: none;
+  height: 100%;
+  left: 65px;
+  margin: 0 auto;
+  position: absolute;
+}
+
+.image-uploader .gallery {
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.image-uploader .gallery img {
+  width: 50%;
+  height: 50%;
+  opacity: .7;
+}
+
+#image-input {
+  display: none;
+}

@@ -53,14 +53,21 @@ section article p {
   font-size: 25px;
   margin: 40px 0;
 }
-section article button {
+section article #floors-input {
+  padding: 20px;
+  background-color: lightblue;
+}
+section article button,
+section article input[type="button"] {
   border: 1px solid black;
   border-radius: 6px;
   color: black;
   font-size: 15px;
   padding: 10px;
 }
-section article button:hover {
+
+section article button:hover,
+section article input[type="button"]:hover {
   border-color: #006bb3;
   background-color: #006bb3;
   color: white;

@@ -12,8 +12,11 @@
   <form class="form">
     <label for="text">nombre:</label>
     <input id="text" name="name1" type="text">
-    <input type="button" onclick="readInput(this.form)" value="submit">
+    <input
+      type="button" onclick="readInput(this.form)" value="submit">
   </form>
+
+  <a href="https://www.google.com.mx/search?dcr=0&ei=rB-WWoS0DoLasQX9i4PgBQ&q=gatitos&oq=gatitos">gatitos</a>
 
   <form action="">
     <input type="radio" name="gender" value="male"> Male<br>
@@ -32,6 +35,18 @@
     Birthday:
     <input type="date" name="bday">
     <input type="button" onclick="readInput4(this.form)" value="submit">
+  </form>
+
+  <form class="image-uploader">
+    <div class="gallery"></div>
+    <label for="image-input">
+      <h4>Arrastra una foto</h4>
+      <h4>o</h4>
+      <input type="button" value="Sube una imagen">
+    </label>
+    <progress value="20" max="100"></progress>
+    <input id="image-input" type="file" onchange="readInput5.call(this)" multiple>
+
   </form>
 
   <script src="scripts.js"></script>

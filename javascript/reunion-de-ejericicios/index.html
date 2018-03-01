@@ -33,7 +33,12 @@
       <h3>Crear un pirámide</h3>
       <div>
         <p>Tú podás indicar de cuantos pisos quieres tu pirámide y nuestros constructores la alzarán con astericos!</p>
-        <button class="pyramid">Construye tu pirámide</button>
+        <form action="">
+          <label for="floors-input">¿De cuantos pisos será tu pirámide?</label>
+          <input id="floors-input" type="number" name="floorsInput">
+          <input type="text" name="pyramidLegend">
+          <input type="button" value="Construye tu pirámide" onclick="pyramid(this.form)">
+        </form>
       </div>
       <div class="pyramid-div"><pre></pre></div>
     </article>
