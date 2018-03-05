@@ -1,32 +1,110 @@
-.google-image {
-  width: 200px;
+* {
+  margin: 0;
+  padding: 0;
 }
 header {
-  text-align: right;
+  height: 60px;
 }
-header div {
+header nav {
   display: inline-block;
+  padding: 15px;
+  float: right;
 }
+header nav a {
+  color: black;
+  font-family: arial;
+  font-size: 13px;
+  margin: 0 5px;
+  text-decoration: none;
+}
+header nav img {
+  border-radius: 50px;
+  vertical-align: middle;
+  width: 35px;
+}
+
 section {
   text-align: center;
+  margin-top: 125px;
 }
-.input-box {
-  border: .5px solid lightgray;
-  box-shadow: 5px 5px 10px gray;
-  margin: 0 auto;
-  padding: 15px;
-  width: 250px;
-}
-input[type="text"] {
-  border: none;
-  box-shadow: none;
-  padding: 0;
-  width: 200px;
-}
-input[type="text"]:focus {
-  outline: 0; /* none; */
-}
-input[type="button"] {
+section picture {
   display: block;
-  margin: 20px auto;
+  margin: 30px auto;
+  width: 330px;
+}
+section picture img {
+  width: 100%;
+}
+section form div {
+  border: .5px solid lightgray;
+  box-shadow: 3px 4px 5px lightgray;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 550px;
+}
+section form div input {
+  border: 0;
+  font-size: 18px;
+  width: 90%;
+}
+section form div input:focus {
+  outline: 0;
+}
+section form div img {
+  float: right;
+  width: 25px;
+}
+section form input[type="button"] {
+  background-color: #F2F2F2;
+  border-radius: 1px;
+  border: 1px solid #F2F2F2;
+  color: gray;
+  font-family: arial;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 30px 3px;
+}
+section form input[type="button"]:hover {
+  border: 1px solid lightgray;
+  color: black;
+  cursor: pointer;
+}
+section p {
+  font-family: arial;
+  font-size: 13px;
+}
+section p a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #F2F2F2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  border-bottom: .5px solid lightgray;
+  border-top: .5px solid lightgray;
+  color: gray;
+  font-family: arial;
+  font-size: 15px;
+  margin: 0 10px;
+  padding: 12px 20px;
+}
+footer div {
+  display: inline-block;
+  padding: 10px 20px;
+}
+footer div a {
+  color: gray;
+  font-family: arial;
+  font-size: 13px;
+  margin: 0 12px;
+  text-decoration: none;
+}
+footer div:last-child {
+  float: right;
 }
