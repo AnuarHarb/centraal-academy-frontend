@@ -22,7 +22,7 @@ section picture {
   position: absolute;
   top: 150px;
   left: 42%;
-  transition: width 2s;
+  transition: left 2s;
   width: 150px;
 }
 section picture img {

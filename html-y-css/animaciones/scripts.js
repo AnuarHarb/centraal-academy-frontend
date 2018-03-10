@@ -29,7 +29,6 @@ function moveCenter() {
 function moveRight() {
   picture.style.left = "70%";
   picture.style.transform = "scaleX(-1)";
-  picture.style.transform = "rotate(100deg)";
   picture.style.width = "225px";
   goku.src = "img/goku-fly.png";
   gokuSSJ.src = "img/goku-ssj-fly.png";
