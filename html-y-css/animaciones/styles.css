@@ -1,0 +1,63 @@
+body {
+  animation-duration: 20s;
+  animation-name: worldCaos;
+  animation-fill-mode: forwards;
+  background-image: url('img/background.jpg');
+  background-size: cover;
+}
+.flash {
+  background-color: yellow;
+  background-image: 'none';
+  animation-duration: .8s;
+  animation-name: flash;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+section picture {
+  animation-duration: 2s;
+  animation-name: fly;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  display: inline-block;
+  position: absolute;
+  top: 150px;
+  left: 42%;
+  transition: width 2s;
+  width: 150px;
+}
+section picture img {
+  position: absolute;
+  width: 100%;
+}
+.goku-ssj {
+  display: none;
+}
+.fight-container {
+  display: none;
+  animation: fight 20s infinite;
+}
+
+@keyframes fly {
+  0% {
+    top: 170px;
+  }
+  50% {
+    top: 150px;
+  }
+  100% {
+    top: 170px;
+  }
+}
+@keyframes worldCaos {
+  from {
+    background-image: url('img/background.jpg');
+  }
+  to {
+    background-image: url('img/background2.jpg');
+  }
+}
+@keyframes flash {
+  to {
+    background-image: url('img/background4.jpg');
+  }
+}
