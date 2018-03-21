@@ -1,6 +1,30 @@
+div {
+  border: 1px solid black;
+  height: 100px;
+  width: 100px;
+}
+div p {
+  text-align: right;
+}
+.promo {
+  display: none;
+}
+.active {
+  background-color: red;
+}
+
+
+
+
+
+
+
+
+
 * {
   margin: 0;
-  padding: 0;
+  padd
+  ing: 0;
 }
 body {
   font-family: arial;

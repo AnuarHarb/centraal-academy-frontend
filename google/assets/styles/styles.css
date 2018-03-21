@@ -108,11 +108,17 @@ footer div a {
 footer div:last-child {
   float: right;
 }
-@media (max-width:450px) {
+@media only screen and (max-width:450px) {
   section form div {
+    border: 1px solid blue;
     width: 300px;
   }
   footer {
     bottom: -100px;
+  }
+}
+@media only screen and (min-width: 451px) and (max-width: 1023px) {
+  section form div {
+    border: 1px solid red;
   }
 }
