@@ -1,5 +1,23 @@
 'use strict';
-var word = ['H','O','L','A','O'];
+
+// Dom elements
+const keyboard = document.querySelector('.keyboard');
+const errorsText = document.querySelector('.errors');
+const aciertosText = document.querySelector('.aciertos');
+const resetButton = document.querySelector('.reset');
+const showWord = document.querySelector('.show-word');
+const startButton = document.querySelector('.start-button');
+const letterBox = document.getElementsByClassName('letter-box');
+
+
+const wordList = [
+  'Palabra',
+  'arbol',
+  'aguacate',
+  'OlaKeAce'
+]
+
+var word = [];
 
 // Estado del juego
 var state = {
@@ -21,13 +39,12 @@ document.addEventListener('keydown', function getKeyLetter(event) {
 
 // Toma la letra seleccionada y la compara con las letras de la palabra para decidir si fue una jugada correcta o un error
 function playLetter(selectedLetter) {
-  var errorsText = document.querySelector('.errors');
-  var aciertosText = document.querySelector('.aciertos');
   var isMistake = true;
   for (var i = 0; i < word.length; i++) {
     if (selectedLetter == word[i]) {
       isMistake = false;
       showLetter(i, selectedLetter);
+      state.aciertos = state.aciertos + 1;
     }
   }
   // Resvisa si la bandera isMistake quedo como positiva o negativa para saber is fue un error o no
@@ -36,16 +53,17 @@ function playLetter(selectedLetter) {
     errorsText.innerHTML = state.errors;
     errorHandler();
   } else {
-    state.aciertos = state.aciertos + 1;
     aciertosText.innerHTML = state.aciertos;
+    aciertosHandler();
   }
 }
 
 // Inicia el juego y pinta la palabra para que el jugador sepa de cuantas letras es
 function startGame() {
-  var showWord = document.querySelector('.show-word');
-  var keyboard = document.querySelector('.keyboard');
   keyboard.style.display = 'block';
+  startButton.innerHTML = 'reiniciar';
+  reset();
+  pickWord();
   for(var i = 0; i < word.length; i++){
     var space = document.createElement('span');
     space.classList.add('letter-box');
@@ -57,7 +75,6 @@ function startGame() {
 
 // Pinta la letra correcta en la pocisión correspondiente cuando hay un acierto
 function showLetter(position, selectedLetter) {
-  var letterBox = document.getElementsByClassName('letter-box');
   letterBox[position].innerHTML = selectedLetter
 }
 
@@ -70,4 +87,27 @@ function errorHandler() {
   } else {
     alert('Perdiste, existe Master Card');
   }
+}
+
+function aciertosHandler() {
+  if( state.aciertos == word.length ) {
+    console.log('ganaste');
+    resetButton.style.display = 'block';
+    keyboard.style.display = 'none';
+  }
+}
+
+function reset() {
+  state.errors = 0;
+  state.aciertos = 0;
+  showWord.innerHTML = '';
+  errorsText.innerHTML = state.errors;
+  aciertosText.innerHTML = state.aciertos;
+  resetButton.style.display = 'none';
+}
+
+function pickWord() {
+  var random = Math.floor(Math.random() * wordList.length);
+  word = wordList[random];
+  word = word.toUpperCase();
 }

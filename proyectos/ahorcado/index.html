@@ -10,7 +10,7 @@
 <body>
 
   <div>
-    <button onclick="startGame()">Empezar</button>
+    <button class="start-button" onclick="startGame()">Empezar</button>
     <div class="show-word"></div>
   </div>
 
@@ -19,6 +19,8 @@
     <span class="errors">0</span>
   </h2>
   <h2>Aciertos = <span class="aciertos">0</span></h2>
+
+  <button class="reset" onclick="startGame()">¿Volver a jugar?</button>
 
   <section class="keyboard">
     <button onclick="compareLetter(this)" value="A">A</button>
