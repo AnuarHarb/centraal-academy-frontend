@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+section {
+  background-color: lightgray;
+  padding: 100px;
+}
+.container {
+  position: relative;
+}
+.x-wing {
+  background-color: gray;
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+.death-star {
+  background-color: black;
+  border-radius: 100%;
+  display: inline-block;
+  float: right;
+  height: 100px;
+  width: 100px;
+}
+.laser {
+  background-color: red;
+  display: inline-block;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  height: 5px;
+  width: 75px;
+}
+.shoot {
+  animation-duration: 2s;
+  animation-name: shoot;
+  animation-iteration-count: 1;
+}
+@keyframes shoot {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: 95%;
+  }
+}
