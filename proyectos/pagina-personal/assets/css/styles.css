@@ -1,0 +1,76 @@
+:root {
+  --primary-color: #c91414;
+  --secondary-color: #0099ff;
+  --text-size: 16px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--text-size);
+}
+
+header {
+  background-image: linear-gradient(rgba(1,0,0,.5), rgba(1,0,0,.5)), url('../img/paisaje.jpg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+header h1 {
+  color: white;
+  font-size: 60px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+header .cover-card-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header .cover-card {
+  border: 1px solid white;
+  color: white;
+  height: 300px;
+  padding: 50px 25px;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+.about-me h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.about-me h2 span {
+  color: var(--primary-color);
+}
+
+.about-me button {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all .4s;
+}
+
+.about-me button:hover {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.about-me button:focus {
+  outline: none;
+}
