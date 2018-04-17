@@ -1,3 +1,4 @@
+/* variables */
 :root {
   --primary-color: #c91414;
   --secondary-color: #0099ff;
@@ -9,6 +10,7 @@ body {
   font-size: var(--text-size);
 }
 
+/* Layout */
 header {
   background-image: linear-gradient(rgba(1,0,0,.5), rgba(1,0,0,.5)), url('../img/paisaje.jpg');
   background-attachment: fixed;
@@ -44,6 +46,7 @@ header .cover-card {
   padding: 60px 10px;
 }
 
+/* About me section */
 .about-me h2 {
   font-size: 40px;
   font-weight: 700;
@@ -73,4 +76,50 @@ header .cover-card {
 
 .about-me button:focus {
   outline: none;
+}
+
+.about-me ul {
+  list-style: none;
+}
+
+.about-me li {
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.about-me li i {
+  color: var(--primary-color);
+  margin-right: 20px;
+}
+
+/* Custom Modal  */
+.custom-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-modal.not-showing {
+  display: none;
+}
+
+.modal-background {
+  bottom: 0;
+  background-image: linear-gradient(rgba(1,0,0,.8), rgba(1,0,0,.8));
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.custom-modal-card {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  width: 500px;
+}
+
+.custom-modal-card .close-modal {
+  text-align: right;
 }
