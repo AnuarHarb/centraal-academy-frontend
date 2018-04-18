@@ -123,3 +123,30 @@ header .cover-card {
 .custom-modal-card .close-modal {
   text-align: right;
 }
+
+
+.background-section {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/background2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.show-magic-box {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../img/anuar.jpg');
+  background-size: cover;
+  padding: 20px;
+}
+.magic-box-container {
+  padding: 20px;
+}
+.magic-box-content {
+  color: white;
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.magic-box-active {
+  opacity: 1;
+}

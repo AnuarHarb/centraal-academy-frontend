@@ -21,10 +21,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" data-target="#home">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about-me">Sobre Mi</a>
+          <a class="nav-link" data-target="#about-me">Sobre Mi</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -41,7 +41,7 @@
     </div>
   </nav>
 
-  <header class="row">
+  <header id="home" class="row">
     <article class="col-6">
       <h1>Desarrollo Web</h1>
     </article>
@@ -60,16 +60,16 @@
 
   <section id="about-me" class="about-me row content">
     <h2 class="col-12">Sobre <span>Mi</span></h2>
-    <div class="col-6">
-      <h3>Esta es mi historia...</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique a quam eum voluptatum assumenda sunt ea fuga accusantium dolore, atque enim quis fugiat exercitationem omnis ullam sequi voluptatem, expedita eos!</p>
+    <div class="col-12 col-md-6 text-center text-sm-left">
+      <h3 class="text-left">Esta es mi historia...</h3>
+      <p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique a quam eum voluptatum assumenda sunt ea fuga accusantium dolore, atque enim quis fugiat exercitationem omnis ullam sequi voluptatem, expedita eos!</p>
       <button>¡Conoceme!</button>
     </div>
-    <div class="col-6">
+    <div class="col-12 col-md-6">
       <ul>
-        <li class="modal-button skill1-button"><i class="fab fa-avianex"></i>skill1</li>
+        <li class="modal-button skill1-button" data-active-modal="first-card"><i class="fab fa-avianex"></i>skill1</li>
         <li class="modal-button skill2-button"><i class="fas fa-chess"></i>sill2</li>
-        <li><i class="far fa-keyboard"></i>skill3</li>
+        <li class="modal-button skill3-button"><i class="far fa-keyboard"></i>skill3</li>
       </ul>
     </div>
   </section>
@@ -84,13 +84,49 @@
       <h3>skill1</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio similique cupiditate fugit tempora quibusdam labore, quisquam accusamus qui unde, beatae sit esse voluptatibus ex iusto error vero non. Eligendi.</p>
     </article>
-    
-    <article class="custom-modal-card skill2-modal">
+
+    <article class="custom-modal-card skill2-modal" data-active-modal="second-card">
       <div class="close-modal">
         <i class="fas fa-times-circle"></i>
       </div>
       <h3>skill2</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio similique cupiditate fugit tempora quibusdam labore, quisquam accusamus qui unde, beatae sit esse voluptatibus ex iusto error vero non. Eligendi.</p>
+    </article>
+
+    <article class="custom-modal-card skill3-modal" data-active-modal="third-card">
+      <div class="close-modal">
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <h3>skill3</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab distinctio similique cupiditate fugit tempora quibusdam labore, quisquam accusamus qui unde, beatae sit esse voluptatibus ex iusto error vero non. Eligendi.</p>
+    </article>
+  </section>
+
+  <section class="background-section"></section>
+  <section class="example-section row content">
+    <article class="col-4 magic-box-container">
+      <div class="show-magic-box" data-active-box="anuar">
+        <div class="magic-box-content anuar">
+          <h3>Soy Anuar</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eveniet dolor quo fugiat in nulla voluptas sunt libero deserunt voluptates, doloremque incidunt architecto ad reiciendis rem odio et iusto optio.</p>
+        </div>
+      </div>
+    </article>
+    <article class="col-4 magic-box-container">
+      <div class="show-magic-box" data-active-box="juan">
+        <div class="magic-box-content juan">
+          <h3>Soy Juan</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eveniet dolor quo fugiat in nulla voluptas sunt libero deserunt voluptates, doloremque incidunt architecto ad reiciendis rem odio et iusto optio.</p>
+        </div>
+      </div>
+    </article>
+    <article class="col-4 magic-box-container">
+      <div class="show-magic-box" data-active-box="ramon">
+        <div class="magic-box-content ramon">
+          <h3>Soy Ramon</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eveniet dolor quo fugiat in nulla voluptas sunt libero deserunt voluptates, doloremque incidunt architecto ad reiciendis rem odio et iusto optio.</p>
+        </div>
+      </div>
     </article>
   </section>
 
