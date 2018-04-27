@@ -1,0 +1,184 @@
+/* variables */
+:root {
+  --primary-color: #c91414;
+  --secondary-color: #0099ff;
+  --text-size: 16px;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: var(--text-size);
+}
+
+/* Layout */
+header {
+  background-image: linear-gradient(rgba(1,0,0,.5), rgba(1,0,0,.5)), url('../img/paisaje.jpg');
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+header h1 {
+  color: white;
+  font-size: 60px;
+  padding-top: 200px;
+  text-align: center;
+}
+
+header .cover-card-container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+header .cover-card {
+  border: 1px solid white;
+  color: white;
+  height: 300px;
+  padding: 50px 25px;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+/* About me section */
+.about-me h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.about-me h2 span {
+  color: var(--primary-color);
+}
+
+.about-me button {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all .4s;
+}
+
+.about-me button:hover {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.about-me button:focus {
+  outline: none;
+}
+
+.about-me ul {
+  list-style: none;
+}
+
+.about-me li {
+  cursor: pointer;
+  font-size: 60px;
+}
+
+.about-me li i {
+  color: var(--primary-color);
+  margin-right: 20px;
+}
+
+/* Custom Modal  */
+.custom-modal {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-modal.not-showing {
+  display: none;
+}
+
+.modal-background {
+  bottom: 0;
+  background-image: linear-gradient(rgba(1,0,0,.8), rgba(1,0,0,.8));
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.custom-modal-card {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  width: 500px;
+}
+
+.custom-modal-card .close-modal {
+  text-align: right;
+}
+
+
+.background-section {
+  background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/background2.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.show-magic-box {
+  background-image: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../img/anuar.jpg');
+  background-size: cover;
+  padding: 20px;
+}
+
+.magic-box-container {
+  padding: 20px;
+}
+
+.magic-box-content {
+  color: white;
+  opacity: 0;
+  transition: opacity .8s;
+}
+
+.magic-box-active {
+  opacity: 1;
+}
+
+.carrousel-section {
+  background-color: #eee;
+}
+
+@media screen and (max-width:768px) {
+
+  header {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  header h1  {
+    padding: 100px 0 20px 0;
+  }
+
+  .magic-box-container {
+    width: 100%;
+    display: block !important;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .custom-modal-card {
+    top: 25%;
+    width: 90%;
+  }
+}
